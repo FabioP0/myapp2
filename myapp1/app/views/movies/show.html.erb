@@ -1,0 +1,14 @@
+<h1>Datos de la película</h1>
+<dl>
+    <dt>Código</dt>
+    <dd><%= @movie.codigo %></dd>
+    <dt>Título</dt>
+    <dd><%= @movie.titulo %></dd>
+    <dt>Director</dt>
+    <dd><%= @movie.director %></dd>
+    <dt>Género</dt>
+    <dd><%= @movie.genero %></dd>
+</dl>
+<%= image_tag(@movie.avatar_url) if @movie.avatar? %>
+<br>
+<button type="button" class="btn btn-dark"><%= link_to "Editar", edit_movie_path(@movie) %></button> <button type="button" class="btn btn-dark"><%= link_to "Lista de Películas", movies_path %></button>

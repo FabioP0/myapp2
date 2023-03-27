@@ -1,0 +1,14 @@
+<h1>Datos de la persona</h1>
+<dl>
+    <dt>Identificación</dt>
+    <dd><%= @person.identificacion %></dd>
+    <dt>Nombre</dt>
+    <dd><%= @person.nombre %></dd>
+    <dt>Apellido</dt>
+    <dd><%= @person.apellido %></dd>
+    <dt>Edad</dt>
+    <dd><%= @person.edad %></dd>
+</dl> 
+<%= image_tag(@person.avatar_url) if @person.avatar? %>
+<br>
+</button><button type="button" class="btn btn-dark"><%= link_to "Editar", edit_person_path(@person) %></button> <button type="button" class="btn btn-dark"><%= link_to "Lista de persona", people_path %>

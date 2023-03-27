@@ -1,0 +1,12 @@
+<div class = "row">
+    <div class = "col-md-6">
+        <%= simple_form_for @movie do |f| %>
+            <%= f.input :codigo %>
+            <%= f.input :titulo %>
+            <%= f.input :director %>
+            <%= f.input :genero %>
+            <%= f.input :avatar %>
+            <button type="button" class="btn btn-secondary"><%= f.button :submit %></button>
+        <% end %>
+    </div>
+</div>

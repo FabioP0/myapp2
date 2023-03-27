@@ -1,0 +1,20 @@
+<h1>Lista de personas</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Identificacion</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Edad</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <%= render @people %>
+  </tbody>
+
+</table>
+
+<button type="button" class="btn btn-dark"><%= link_to "Adicionar persona", new_person_path %></button>
